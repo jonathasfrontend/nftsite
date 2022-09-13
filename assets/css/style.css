@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+    --body-background: #0e0e0e;
+    --color-logo: #8dff50;
+    --card-color: #252525;
+    --text-color: #fff;
+    --subtitle-color: #5a5757;
+    --black-text: #000;
+    --color-input: #0D0D0D;
+    --padding-page: 30px 10em;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* ######################################################################################################### */
+
+header{
+    width: 100%;
+    padding: var(--padding-page);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo .logo-text{
+    color: var(--text-color);
+    font-size: 2em;
+}
+.logo-text_{
+    color: var(--color-logo);
+}
+header ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+header ul li{
+    margin: 0 10px;
+}
+header ul li a{
+    font-size: 16px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+header .conect_wallet button{
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 10px 20px;
+    background-color: var(--text-color);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+header .conect_wallet button img{
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+}
+
+/* ######################################################################################################### */
+
+.describe{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: var(--padding-page);
+    color: var(--text-color);
+}
+.describe .desc-content-text{
+    width: 50%;
+}
+.describe p{
+    font-size: 20px;
+}
+.describe h1{
+    font-size: 2.4em;
+}
+
+/* ######################################################################################################### */
+
+.container-nfts{
+    width: 100%;
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1%;
+    padding: 20px;
+    /* background-color: var(--body-background); */
+}
+.container-nfts .card-nft{
+    margin: 10px 0;
+    width: 100%;
+    height: 430px;
+    border-radius: 10px;
+    background-color: var(--card-color);
+    overflow: hidden;
+}
+.container-nfts .card-nft img{
+    width: 100%;
+    height: auto;
+}
+.container-nfts .card-nft p{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color);
+    text-align: center;
+    margin: 10px 0;
+}
+.container-nfts .card-nft .preco{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+.container-nfts .card-nft .preco h1{
+    font-size: 20px;
+    font-weight: 800;
+    color: #ffffff;
+}
+.container-nfts .card-nft .preco p{
+    font-size: 20px;
+    font-weight: 800;
+    color: #000000;
+    padding: 10px 20px;
+    background-color: var(--text-color);
+}
+
+/* ############################################################################################# */
+
+.faq-content{
+    width: 100%;
+    padding: 20px 4em;
+}
+.faq-content h2{
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 500;
+    text-align: justify;
+}
+.faq-content img{
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    margin: 10px 0;
+}
+footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 0 4em;
+}
+footer .content-footer{
+    width: 50%;
+}
+footer .content-footer p{
+    font-size: 14px;
+    padding: 10px;
+    text-align: justify;
+}
+footer .content-link h1{
+    font-size: 18px;
+    padding: 10px;
+    text-align: justify;
+}
